@@ -9,6 +9,7 @@ class YachtTest < Minitest::Test
   end
 
   def test_it_has_attributes
+    skip
     yacht = Yacht.new("S.S. Minnow", 40)    
 
     assert_equal "S.S. Minnow", yacht.name
@@ -16,6 +17,7 @@ class YachtTest < Minitest::Test
   end
 
   def test_it_has_different_attribites
+    skip
     yacht = Yacht.new("Octopus", 75)
 
     assert_equal "Octopus", yacht.name
@@ -23,6 +25,7 @@ class YachtTest < Minitest::Test
   end
   
   def test_it_can_sail
+    skip
     yacht = Yacht.new("Octopus", 75)
     
     assert_equal false, yacht.sailing?
